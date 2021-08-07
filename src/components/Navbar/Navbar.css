@@ -1,0 +1,35 @@
+.navbar_icons {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 75px;
+    height: 100vh;
+}
+.navbar_logo {
+    width: 36px;
+    height: 36px;
+    margin-left: 18px !important;
+    margin: 16px;
+    cursor: pointer;
+
+}
+
+.navbar_icons > .MuiSvgIcon-root {
+    cursor: pointer;
+    color: black;
+
+  }
+
+  .navbar_middle{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px ;
+      margin-bottom: 260px;
+      margin-top: 30px;
+  }
+
+  .navbar_bottom{
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px 
+  }
