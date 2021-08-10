@@ -10,6 +10,7 @@ import TurnedInIcon from '@material-ui/icons/TurnedIn';
 import ViewHeadlineIcon from '@material-ui/icons/ViewHeadline';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import AccountBoxIcon from '@material-ui/icons/AccountBox';
+import { Link ,  BrowserRouter as Router } from 'react-router-dom';
 function Navbar()
 {
     return(
@@ -17,7 +18,11 @@ function Navbar()
          <img className="navbar_logo" src={sprinklr} />
          <div className="navbar_middle">
        <HomeIcon style={{fontSize: 32, marginBottom: 27}}/>
-       <AssessmentIcon style={{fontSize: 32, marginBottom: 27}}/>
+       <Router>
+       <Link to="/leaderboard">
+       <AssessmentIcon style={{fontSize: 32, marginBottom: 27, color: "black"}}/>
+       </Link>
+       </Router>
        <DateRangeIcon style={{fontSize: 32, marginBottom: 27}}/>
        <TurnedInIcon style={{fontSize: 32, marginBottom: 27}}/>
        <ViewHeadlineIcon style={{fontSize: 32}}/>
@@ -27,6 +32,7 @@ function Navbar()
        <AccountBoxIcon style={{fontSize: 32}}/>
        </div>
        </div>
+      
     )
 }
 export default Navbar;
