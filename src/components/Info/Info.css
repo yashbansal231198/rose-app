@@ -16,12 +16,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 540px;
 }
 
 .dialog_content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+   
 }
 .dialog_content img {
     width: 100px;

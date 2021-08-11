@@ -6,6 +6,7 @@ import Item from "./components/Item/Item";
 import LeaderBoard from "./components/LeaderBoard/LeaderBoard";
 import Posts from "./components/Posts/Posts";
 import Profile from "./components/Profile/Profile";
+import Notification from "./components/Notification/Notification";
 import { Link , Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 export type ItemProps= {
   urlToImage: string,
@@ -24,6 +25,7 @@ function App() {
       <Route exact path="/" component={Posts} />
       <Route  path="/leaderboard" component={LeaderBoard}/>
       <Route  path="/profile" component={Profile}/>
+      <Route  path="/notification" component={Notification}/>
     </Switch>
     </div>
     </Router>

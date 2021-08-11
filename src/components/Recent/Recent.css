@@ -1,0 +1,88 @@
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 26px;
+}
+.notify {
+    height: 1000px;
+    width: 650px;
+    background-color: white;
+    margin-left: 100px;
+    margin-top: 32px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.option h4 {
+    background-color: gainsboro;
+    margin-left: 10px;
+    width: 330px;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 450;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option h4:first-child {
+    color: green;
+    background-color: rgb(234, 245, 234);
+}
+
+.recentPosts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+ .form_element {
+     margin-left: 20px;
+     margin-top: 15px;
+     display: flex;
+     align-items: start;
+     flex-direction: column;
+
+}
+
+.form_element h5 {
+    color: grey;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.checkbox {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.second_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+.second_page h5 {
+    color: grey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: 450;
+    font-size: 14px;
+}
+
+.second_page button {
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}

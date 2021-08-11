@@ -17,19 +17,25 @@ function Navbar()
         <div className="navbar_icons">
          <img className="navbar_logo" src={sprinklr} />
          <div className="navbar_middle">
-       <HomeIcon style={{fontSize: 32, marginBottom: 27}}/>
+       <a href="/">
+       <HomeIcon style={{fontSize: 32, marginBottom: 27, color: "black"}}/>
+       </a>
        <Router>
-       <Link to="/leaderboard">
+       <a href="/leaderboard">
        <AssessmentIcon style={{fontSize: 32, marginBottom: 27, color: "black"}}/>
-       </Link>
+       </a>
        </Router>
        <DateRangeIcon style={{fontSize: 32, marginBottom: 27}}/>
        <TurnedInIcon style={{fontSize: 32, marginBottom: 27}}/>
        <ViewHeadlineIcon style={{fontSize: 32}}/>
        </div>
        <div className="navbar_bottom">
-        <NotificationsIcon style={{fontSize: 32, marginBottom: 30}}/>
-       <AccountBoxIcon style={{fontSize: 32}}/>
+        <a href="/notification">
+        <NotificationsIcon style={{fontSize: 32, marginBottom: 25, color: "black"}}/>
+        </a>
+        <a href="/profile">
+       <AccountBoxIcon style={{fontSize: 32, color: "black", marginBottom:20}}/>
+       </a>
        </div>
        </div>
       
