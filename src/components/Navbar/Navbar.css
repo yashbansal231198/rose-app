@@ -1,37 +1,42 @@
 .navbar_icons {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 75px;
-    height: 100vh;
-    position: sticky;
-    top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 75px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 .navbar_logo {
-    width: 36px;
-    height: 36px;
-    margin-left: 18px !important;
-    margin: 16px;
-    cursor: pointer;
-
+  width: 36px;
+  height: 36px;
+  margin-left: 18px !important;
+  margin: 16px;
+  cursor: pointer;
 }
 
-.navbar_icons > .MuiSvgIcon-root {
-    cursor: pointer;
-    color: black;
+.navbar_middle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 400px;
+  margin-top: 30px;
+}
 
-  }
-
-  .navbar_middle{
-      display: flex;
-      flex-direction: column;
-      margin-left: 20px ;
-      margin-bottom: 250px;
-      margin-top: 30px;
-  }
-
-  .navbar_bottom{
-      display: flex;
-      flex-direction: column;
-      margin-left: 20px 
-  }
+.navbar_icons a {
+  cursor: pointer;
+  color: black;
+  margin-bottom: 12px;
+  height: 45px;
+  text-align: center;
+  width: 60%;
+  margin-left: 15px;
+}
+.navbar_icons a:hover {
+  background-color: rgb(208, 236, 208);
+  border-radius: 100%;
+  color: green;
+}
+.navbar_bottom {
+  display: flex;
+  flex-direction: column;
+}

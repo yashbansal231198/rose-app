@@ -1,0 +1,65 @@
+.right {
+  display: flex;
+}
+.results {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+form {
+  display: flex;
+  margin-left: 70px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+button {
+  background: #17f;
+  color: #fff;
+  font: inherit;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 1.5em;
+}
+button:active {
+  background-color: #05b;
+}
+input {
+  border: 0.2px solid #999;
+  border-radius: 5px;
+  font: inherit;
+  padding: 0.5em;
+  outline: none;
+  width: 640px;
+  height: 22px;
+  margin-left: 40px;
+}
+input:focus {
+  outline: auto #17f;
+}
+.right p {
+  margin-left: 115px;
+}
+.right_middle {
+  margin-left: 115px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 28px;
+  width: 165px;
+}
+.right_middle > span {
+  font-weight: bold;
+  color: black;
+  font-size: 1.1em;
+  margin-left: 5px;
+}
+.posts {
+  display: grid;
+  width: 50vw;
+  margin-left: 115px;
+
+  gap: 30px;
+  grid-template-columns: 310px 310px;
+}

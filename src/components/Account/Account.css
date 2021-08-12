@@ -1,25 +1,24 @@
 .account {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .account img {
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin-right: 10px;
 }
 
 .current {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-    
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }
 
 .account h5 {
-    color: gray;
-    font-size: 14px;
+  color: gray;
+  font-size: 14px;
 }

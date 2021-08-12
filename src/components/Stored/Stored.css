@@ -1,179 +1,171 @@
 .info_top {
-    display:  flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .info_top button {
-    margin-right: 20px;
-    background-color: green;
-    border-radius: 10px;
-    cursor: pointer;
+  margin-right: 20px;
+  background-color: green;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .top_left {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
 }
 
 .top_left img {
-    height: 100px;
-    width: 100px;
-    margin-top: 40px;
-    border-radius: 5px;
-    border: 1px solid whitesmoke;
-    
+  height: 100px;
+  width: 100px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
 }
 
-.name{
-    margin-top: 10px;
+.name {
+  margin-top: 10px;
 }
 
 .top_left h2 {
-    display: inline;
-
+  display: inline;
 }
 .lastname {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 .top_left h5 {
-    margin-top: 10px;
-    margin-bottom: 15px;
-    color: gray;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  color: gray;
 }
-
 
 .mystats_week1 {
-    margin-left: 150px;
+  margin-left: 150px;
 }
 
-.mystats_total1{
-    margin-right: 35px;
-    margin-left: 25px;
+.mystats_total1 {
+  margin-right: 35px;
+  margin-left: 25px;
 }
 .mystats_total1 h4 {
-    color : gray;
-    font-size: 13px;
+  color: gray;
+  font-size: 13px;
 }
 .mystats_week1 h4 {
-    color : gray;
-    font-size: 13px;
-    margin-bottom: 20px;
+  color: gray;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
 
 .awards {
-    margin-left: 25px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+  margin-left: 25px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 .circles {
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.circle{
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
-    margin-right: 15px;
-    background-color: gainsboro;
+.circle {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: gainsboro;
 }
 .meta_data {
-    margin-left: 25px;
-    margin-bottom: 80px;
+  margin-left: 25px;
+  margin-bottom: 80px;
 }
 
 .department {
-    margin-top: 35px;
-    margin-bottom: 25px;
+  margin-top: 35px;
+  margin-bottom: 25px;
 }
 
 .department h5 {
-    color: gray;
-    margin-bottom: 10px;
+  color: gray;
+  margin-bottom: 10px;
 }
 
 .department h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .location {
-   
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .location h5 {
-    color: gray;
-    margin-bottom: 10px;
+  color: gray;
+  margin-bottom: 10px;
 }
 
 .location h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .language {
-   
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .language h5 {
-    color: gray;
-    margin-bottom: 10px;
+  color: gray;
+  margin-bottom: 10px;
 }
 
 .language h4 {
-    font-weight: 400;
+  font-weight: 400;
 }
-.accounts{
-    margin-left: 25px;
-    margin-bottom: 40px;
-   
+.accounts {
+  margin-left: 25px;
+  margin-bottom: 40px;
 }
 .heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .add {
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
 }
 
 .accounts h3 {
-    font-weight: 450;
-    margin-left: 200px;
-    margin-bottom: 5px;
+  font-weight: 450;
+  margin-left: 200px;
+  margin-bottom: 5px;
 }
 
 .accounts > h5 {
-    color: gray;
-    margin-left: 14px;
+  color: gray;
+  margin-left: 14px;
 }
-.language1{
-    margin-left: 25px;
-    margin-bottom: 40px;
-   
+.language1 {
+  margin-left: 25px;
+  margin-bottom: 40px;
 }
 .language1 > h4 {
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .language1 > h5 {
-    color: gray;
-    margin-bottom: 10px;
+  color: gray;
+  margin-bottom: 10px;
 }
 .info > button {
-    margin-top: 40px;
-    margin-left: 25px;
-    background-color: gainsboro;
-    color: black;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-bottom: 20px;
+  margin-top: 40px;
+  margin-left: 25px;
+  background-color: gainsboro;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
-
