@@ -81,5 +81,53 @@
       "description":
         "Sprinklr is named a Leader in The Forrester Wave: Social Suites Q3 2021 for a second time! According to Forrester's evaluation, Sprinklr leads a formidable and intensely customizable unified platform."
     }
-  ]
+  ] ,
+  "departmentleaders" : [
+    { "name":"Joel Lindhe",
+     "location":"San Francisco",
+     "coin":"90"
+    },
+    { "name":"Ryan Parr",
+     "location":"Portland, OR",
+     "coin":"80"
+   },
+     {"name":"Rachit Pathak",
+     "location":"Gurgaon, India",
+     "coin":"70"
+     },
+     {
+     "name":"Samarth Arora",
+     "location":"Gurgaon, India",
+     "coin":"65"
+     },
+     {
+     "name":"Utkarsh Saxena",
+     "location": "Gurgaon, India",
+     "coin":"55"
+     }
+   ],
+   "locationleaders" : [
+    { "name":"Vansh Batra",
+     "location":"Gurgaon, India",
+     "coin":"50"
+    },
+    { "name":"Ankush Kapoor",
+     "location":"Gurgaon, India",
+     "coin":"80"
+   },
+     {"name":"Rachit Pathak",
+     "location":"Gurgaon, India",
+     "coin":"70"
+     },
+     {
+     "name":"Samarth Arora",
+     "location":"Gurgaon, India",
+     "coin":"65"
+     },
+     {
+     "name":"Utkarsh Saxena",
+     "location": "Gurgaon, India",
+     "coin":"55"
+     }
+   ]
 }
