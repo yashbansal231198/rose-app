@@ -6,7 +6,6 @@ import coins from "../../assets/coins.png";
 import notification1 from "../../assets/notification1.png";
 import notification2 from "../../assets/notification2.png";
 import notification3 from "../../assets/notification3.png";
-import SingleNotification from "../../components/SingleNotification/SingleNotification";
 import Dialog from "@material-ui/core/Dialog";
 import TextField from "@material-ui/core/TextField";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -16,34 +15,11 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
-export type ArticleProps = {
-  urlToImage: string;
-  title: string;
-  description: string;
-};
-const data = [
-  {
-    urlToImage: notification1,
-    title: "The New Digital Edge: Rethinking Strategy for Post Pandemic Area",
-    description:
-      "65% of companies increased their spending on digital and technological initiatives during the past year. The pace of business is chnaging fast. In just 3 months, the pandemic sped up the adoption of digital technologies by three to seven years",
-  },
-  {
-    urlToImage: notification2,
-    title:
-      "The Keys to Leading E-Commerce are Personaliztion and AI. Here's Why",
-    description:
-      "Customers want personalized digital experiences. Discover how you can use AI solutions to make custom digital 1:1 interactions a reality. Enterprise-size companies must work harder to maintain a strong competitive position. ",
-  },
-  {
-    urlToImage: notification3,
-    title:
-      "Sprinklr named a leader in The Forrester Wave: Social Suites, Q3 2021 report!",
-    description:
-      "Sprinklr is named a Leader in The Forrester Wave: Social Suites Q3 2021 for a second time! According to Forrester's evaluation, Sprinklr leads a formidable and intensely customizable unified platform.",
-  },
-];
+import ArticleProps from "../../types/ArticleProps";
+import useNotifications from "../../hooks/useNotifications";
+import NotificationImages from "./NotificationImages";
 const Recent: React.FC = () => {
+  const notifications = useNotifications();
   const [notification, setNotification] = useState(true);
   const [open, setOpen] = React.useState(false);
   const handleClickOpen = () => {
@@ -88,33 +64,45 @@ const Recent: React.FC = () => {
             Accouncements
           </h4>
         </div>
-        {notification ? (
-          <div style={{ width: "100%", height: "10000px" }}>
-            <AutoSizer>
-              {({ width, height }) => (
-                <List
-                  width={width}
-                  height={height}
-                  rowHeight={100}
-                  rowCount={1000}
-                  rowRenderer={({ key, index, style, parent }) => {
-                    return (
-                      <div className="recentPosts">
-                        {data.map((article: ArticleProps, i: number) => (
-                          <SingleNotification article={article} />
-                        ))}
-                      </div>
-                    );
-                  }}
-                />
-              )}
-            </AutoSizer>
-          </div>
-        ) : (
+        {!notification ? (
           <div className="second_page">
             <h4>No Announcements</h4>
             <h5>No announcements for you right now!</h5>
             <button>Reload</button>
+          </div>
+        ) : !notifications ? null : notifications.length == 0 ? null : (
+          <div className="recentPosts">
+            <div style={{ width: "100%", height: "10000px" }}>
+              <AutoSizer>
+                {({ width, height }) => (
+                  <List
+                    width={width}
+                    height={height}
+                    rowHeight={100}
+                    rowCount={1000}
+                    rowRenderer={({ key, index, style, parent }) => {
+                      return (
+                        <div className="single">
+                          <img
+                            className="single_left"
+                            src={NotificationImages[index % 3]}
+                          />
+                          <div className="single_right">
+                            <h2 className="title">
+                              {notifications[index % 3].title}
+                            </h2>
+                            <p className="description">
+                              {notifications[index % 3].description}
+                            </p>
+                            <span>1 day ago</span>
+                          </div>
+                        </div>
+                      );
+                    }}
+                  />
+                )}
+              </AutoSizer>
+            </div>
           </div>
         )}
       </div>

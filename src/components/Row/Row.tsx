@@ -1,10 +1,5 @@
 import coins from "../../assets/coins.png";
-type RowProps = {
-  name: string;
-  location: string;
-  image: string;
-  coin: string;
-};
+import RowProps from "../../types/RowProps";
 function Row({ name, location, image, coin }: RowProps) {
   return (
     <div className="row">

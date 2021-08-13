@@ -28,8 +28,9 @@ function Navbar() {
               margin: "auto",
             }}
           />
+          <span>Home</span>
         </a>
-        <a href="/leaderboard">
+        <a href="/member">
           <AssessmentIcon
             style={{
               fontSize: 32,
@@ -41,6 +42,7 @@ function Navbar() {
               margin: "auto",
             }}
           />
+          <span>Members</span>
         </a>
       </div>
       <div className="navbar_bottom">
@@ -56,6 +58,7 @@ function Navbar() {
               margin: "auto",
             }}
           />
+          <span>Notifications</span>
         </a>
         <a href="/profile">
           <AccountBoxIcon
@@ -69,6 +72,7 @@ function Navbar() {
               margin: "auto",
             }}
           />
+          <span>Account</span>
         </a>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { ItemProps } from "../../App";
+import ItemProps from "../../types/ItemProps";
 import sprinklr from "../../assets/sprinklr.png";
 import logo from "../../assets/logo.png";
 import twitter from "../../assets/twitter.png";
@@ -10,7 +10,7 @@ import BookmarkIcon from "@material-ui/icons/Bookmark";
 import { IconButton } from "@material-ui/core";
 
 import "./Post.css";
-function Item({ item }: { item: ItemProps }) {
+function Post({ item }: { item: ItemProps }) {
   const formatDate = (s: string) => new Date(s).toLocaleDateString(undefined);
   return (
     <div className="item">
@@ -50,10 +50,10 @@ function Item({ item }: { item: ItemProps }) {
           </div>
         </div>
         <div className="likes_right">
-          <div tabIndex={0}>
+          <div tabIndex={0} className="button">
             <BookmarkIcon />
           </div>
-          <div tabIndex={0}>
+          <div tabIndex={0} className="button">
             <ForwardIcon />
             <span>59 </span>
           </div>
@@ -63,4 +63,4 @@ function Item({ item }: { item: ItemProps }) {
   );
 }
 
-export default Item;
+export default Post;

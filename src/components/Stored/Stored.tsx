@@ -9,17 +9,9 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { makeStyles } from "@material-ui/core/styles";
-type ProfileProps = {
-  firstName: string;
-  lastName: string;
-  mail: string;
-  location: string;
-  department: string;
-};
-type StoredProps = {
-  onclick: () => void;
-  profile: ProfileProps;
-};
+import ProfileProps from "../../types/ProfileProps";
+import StoredProps from "../../types/StoredProps";
+
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),

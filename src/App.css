@@ -7,8 +7,10 @@ body {
 }
 .app {
   display: flex;
-  
 }
 
-
-
+.loading {
+  margin-top: 300px;
+  margin-left: 300px;
+  font-size: 35px;
+}

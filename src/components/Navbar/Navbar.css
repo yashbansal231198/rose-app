@@ -20,6 +20,7 @@
   flex-direction: column;
   margin-bottom: 400px;
   margin-top: 30px;
+  margin-left: 12px;
 }
 
 .navbar_icons a {
@@ -28,8 +29,7 @@
   margin-bottom: 12px;
   height: 45px;
   text-align: center;
-  width: 60%;
-  margin-left: 15px;
+  width: 80%;
 }
 .navbar_icons a:hover {
   background-color: rgb(208, 236, 208);
@@ -39,4 +39,21 @@
 .navbar_bottom {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  margin-left: 12px;
+}
+
+a span {
+  display: none;
+}
+
+a:hover span {
+  display: block;
+  position: absolute;
+  left: 65px;
+  color: white;
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
 }

@@ -1,23 +1,42 @@
 
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "toprankingprofiles" : [
+  "members" : [
+    { "name":"Andrew Ryan",
+      "location":"Dubai, UAE",
+      "coin":"40"
+     },
+     { "name":"Joel Clarke",
+      "location":"New York, HQ",
+      "coin":"50"
+    },
+      {"name":"Prateek Jain",
+      "location":"Gurgaon, India",
+      "coin":"30"
+      },
+    { "name":"Vansh Batra",
+     "location":"Gurgaon, India",
+     "coin":"9"
+    },
+    { "name":"Sarthak Saxena",
+     "location":"Gurgaon, India",
+     "coin":"8"
+   },
+     {"name":"Aayush Vashish",
+     "location":"Gurgaon, India",
+     "coin":"7"
+     },
+     {
+     "name":"Samarth Arora",
+     "location":"Gurgaon, India",
+     "coin":"5"
+     },
+     {
+     "name":"Ankush Jain",
+     "location": "Gurgaon, India",
+     "coin":"5"
+     }
+   ],
+"toprankingprofiles" : [
    { "name":"Vansh Batra",
     "location":"Gurgaon, India",
     "coin":"9"
@@ -39,6 +58,28 @@
     "name":"Ankush Jain",
     "location": "Gurgaon, India",
     "coin":"5"
+    }
+  ],
+  "notifications" : [
+    {
+      
+      "title": "The New Digital Edge: Rethinking Strategy for Post Pandemic Area",
+      "description":
+        "65% of companies increased their spending on digital and technological initiatives during the past year. The pace of business is chnaging fast. In just 3 months, the pandemic sped up the adoption of digital technologies by three to seven years"
+    },
+    {
+      
+      "title":
+        "The Keys to Leading E-Commerce are Personaliztion and AI. Here's Why",
+      "description":
+        "Customers want personalized digital experiences. Discover how you can use AI solutions to make custom digital 1:1 interactions a reality. Enterprise-size companies must work harder to maintain a strong competitive position. "
+    },
+    {
+   
+      "title":
+        "Sprinklr named a leader in The Forrester Wave: Social Suites, Q3 2021 report!",
+      "description":
+        "Sprinklr is named a Leader in The Forrester Wave: Social Suites Q3 2021 for a second time! According to Forrester's evaluation, Sprinklr leads a formidable and intensely customizable unified platform."
     }
   ]
 }

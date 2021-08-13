@@ -1,0 +1,26 @@
+.department_leaders {
+  height: 400px;
+  width: 350px;
+  background-color: white;
+  margin-top: 20px;
+}
+.headline {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.headline h4 {
+  margin-left: 5px;
+}
+.row_right1 {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+.profile1 {
+  height: 45px;
+  width: 45px;
+  margin-left: 20px;
+  border-radius: 5px;
+}

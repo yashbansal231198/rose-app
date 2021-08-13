@@ -27,10 +27,10 @@ import Info from "../../components/Info/Info";
 import Stats from "../../components/Stats/Stats";
 import Row from "../../components/Row/Row";
 import TopAccountsWidget from "../../components/TopAccountsWidget/TopAccountsWidget";
-import TopRankingProfiles from "../../components/TopRankingProfiles/TopRankingProfiles.jsx";
+import TopRankingProfiles from "../../components/TopRankingProfiles/TopRankingProfiles";
 import Account from "../../components/Account/Account";
 import PersonIcon from "@material-ui/icons/Person";
-function LeaderBoard() {
+const Profile = () => {
   return (
     <div className="leaderboard">
       <Info />
@@ -41,5 +41,6 @@ function LeaderBoard() {
       </div>
     </div>
   );
-}
-export default LeaderBoard;
+};
+
+export default Profile;

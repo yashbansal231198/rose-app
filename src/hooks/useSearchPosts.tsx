@@ -1,6 +1,6 @@
 import { CallToActionSharp } from "@material-ui/icons";
 import React, { useEffect, useState, useCallback } from "react";
-import { ItemProps } from "../components/Home/Home";
+import ItemProps from "../types/ItemProps";
 const useSearchPosts = (): [
   string,
   ItemProps[],

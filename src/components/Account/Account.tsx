@@ -1,10 +1,7 @@
 import AddIcon from "@material-ui/icons/Add";
 import "./Account.css";
 import Divider from "@material-ui/core/Divider";
-type AccountProps = {
-  image: string;
-  text: string;
-};
+import AccountProps from "../../types/AccountProps";
 function Account({ image, text }: AccountProps) {
   return (
     <div>

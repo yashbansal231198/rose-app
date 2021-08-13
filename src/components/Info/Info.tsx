@@ -17,53 +17,10 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import { makeStyles } from "@material-ui/core/styles";
-
-const locations = [
-  {
-    value: "Amsterdam, Netherlands",
-  },
-  {
-    value: "Austin, TX",
-  },
-  {
-    value: "Chicago, IL",
-  },
-  {
-    value: "Bangalore, India",
-  },
-  {
-    value: "Dubai, UAE",
-  },
-  {
-    value: "Gurgaon, India",
-  },
-  {
-    value: "NYC, HQ",
-  },
-];
-const departments = [
-  {
-    value: "Marketing",
-  },
-  {
-    value: "IT",
-  },
-  {
-    value: "Culture and Talent",
-  },
-  {
-    value: "Engineering",
-  },
-  {
-    value: "Finance",
-  },
-  {
-    value: "Sales",
-  },
-  {
-    value: "Others",
-  },
-];
+import LocationData from "./LocationData";
+import DepartmentData from "./DepartmentData";
+const locations = LocationData;
+const departments = DepartmentData;
 function Info() {
   const [open, setOpen] = React.useState(false);
   const [profile, setProfile] = React.useState({

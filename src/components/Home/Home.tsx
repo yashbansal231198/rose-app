@@ -7,8 +7,8 @@ import ViewHeadlineIcon from "@material-ui/icons/ViewHeadline";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import Navbar from "../Navbar/Navbar";
 import Stats from "../Stats/Stats";
-import Item from "../Post/Post";
-import LeaderBoard from "../Member/Member";
+import Post from "../Post/Post";
+import * as Member from "../Member/Member";
 import { List, AutoSizer } from "react-virtualized";
 import StarIcon from "@material-ui/icons/Star";
 import ryan from "../../assets/ryan.jpeg";
@@ -37,9 +37,11 @@ import { profile } from "console";
 import Info from "../Info/Info";
 import useSearchPosts from "../../hooks/useSearchPosts";
 import Row from "../Row/Row";
-import Account from "../Account/Account";
+import TopAccountsWidget from "../TopAccountsWidget/TopAccountsWidget";
+import TopRankingProfiles from "../TopRankingProfiles/TopRankingProfiles";
 import PersonIcon from "@material-ui/icons/Person";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import ItemProps from "../../types/ItemProps";
 import {
   Link,
   Route,
@@ -47,20 +49,13 @@ import {
   BrowserRouter as Router,
   BrowserRouter,
 } from "react-router-dom";
-export type ItemProps = {
-  urlToImage: string;
-  title: string;
-  url: string;
-  description: string;
-  publishedAt: string;
-};
 
-function Home() {
+const Home = () => {
   const [query, posts, loading, onChangeSearch] = useSearchPosts();
   return (
     <div className="right">
       <div className="results">
-        <form>
+        <form className="search">
           <input
             autoFocus
             value={query}
@@ -85,7 +80,7 @@ function Home() {
                     return (
                       <div className="posts">
                         {posts.map((item: ItemProps, i: number) => (
-                          <Item key={i} item={item} />
+                          <Post key={i} item={item} />
                         ))}
                       </div>
                     );
@@ -103,66 +98,11 @@ function Home() {
 
       <div className="leaderboard_right">
         <Stats />
-        <div className="department_leaders">
-          <div className="headline">
-            <PersonIcon style={{ marginLeft: 10, marginBottom: 20 }} />
-            <h4>ACCOUNTS</h4>
-          </div>
-          <h5>0 of 4 Channels Added</h5>
-          <Divider
-            style={{
-              height: 4,
-              width: "90%",
-              marginLeft: 15,
-              borderRadius: 3,
-              marginBottom: 40,
-            }}
-          />
-          <Account image={linkedin} text="Add Linkedin account" />
-          <Account image={twitter} text="Add Twitter account" />
-          <Account image={logo} text="Add Facebook account" />
-          <Account image={instagram} text="Add Instagram account" />
-          <h4>Manage Accounts</h4>
-        </div>
-        <div className="location_leaders">
-          <div className="headline">
-            <LoyaltyIcon style={{ marginLeft: 10 }} />
-            <h4>TOP 5 RANKING PROFILES</h4>
-          </div>
-          <Row
-            name="Vansh Batra"
-            location="Gurgaon, India"
-            image={vansh}
-            coin="9"
-          />
-          <Row
-            name="Sarthak Saxena"
-            location="Gurgaon, India"
-            image={profile2}
-            coin="8"
-          />
-          <Row
-            name="Aayush Vashish"
-            location="Gurgaon, India"
-            image={profile3}
-            coin="7"
-          />
-          <Row
-            name="Samarth Arora"
-            location="Gurgaon, India"
-            image={profile4}
-            coin="5"
-          />
-          <Row
-            name="Ankush Jain"
-            location="Gurgaon, India"
-            image={profile5}
-            coin="5"
-          />
-        </div>
+        <TopAccountsWidget />
+        <TopRankingProfiles />
       </div>
     </div>
   );
-}
+};
 
 export default Home;

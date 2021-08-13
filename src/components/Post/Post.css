@@ -104,3 +104,8 @@ span {
 .likes_right {
   display: flex;
 }
+
+.button {
+  display: flex;
+  align-items: center;
+}

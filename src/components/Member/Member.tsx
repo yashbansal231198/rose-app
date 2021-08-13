@@ -4,7 +4,7 @@ import RankList from "../RankList/RankList";
 import Stats from "../Stats/Stats";
 import LocationLeaderWidget from "../LocationLeaderWidget/LocationLeaderWidget";
 import DepartmentLeaderWidget from "../DepartmentLeaderWidget/DepartmentLeaderWidget";
-function Member() {
+export const Member = () => {
   return (
     <div className="leaderboard">
       <RankList />
@@ -15,5 +15,4 @@ function Member() {
       </div>
     </div>
   );
-}
-export default Member;
+};
