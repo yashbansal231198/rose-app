@@ -26,10 +26,11 @@
 .navbar_icons a {
   cursor: pointer;
   color: black;
-  margin-bottom: 12px;
-  height: 45px;
   text-align: center;
   width: 80%;
+  vertical-align: middle;
+  margin-bottom: 12px;
+  
 }
 .navbar_icons a:hover {
   background-color: rgb(208, 236, 208);

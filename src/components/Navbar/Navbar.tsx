@@ -17,29 +17,13 @@ function Navbar() {
       <img className="navbar_logo" src={sprinklr} />
       <div className="navbar_middle">
         <a href="/">
-          <HomeIcon
-            style={{
-              fontSize: 32,
-              position: "absolute",
-              top: "0",
-              bottom: "490",
-              left: "0",
-              right: "0",
-              margin: "auto",
-            }}
-          />
+          <HomeIcon style={{ fontSize: 32 }} />
           <span>Home</span>
         </a>
         <a href="/member">
           <AssessmentIcon
             style={{
               fontSize: 32,
-              position: "absolute",
-              top: "0",
-              bottom: "375",
-              left: "0",
-              right: "0",
-              margin: "auto",
             }}
           />
           <span>Members</span>
@@ -50,12 +34,6 @@ function Navbar() {
           <NotificationsIcon
             style={{
               fontSize: 32,
-              position: "absolute",
-              top: "535",
-              bottom: "0",
-              left: "0",
-              right: "0",
-              margin: "auto",
             }}
           />
           <span>Notifications</span>
@@ -64,12 +42,6 @@ function Navbar() {
           <AccountBoxIcon
             style={{
               fontSize: 32,
-              position: "absolute",
-              top: "650",
-              bottom: "0",
-              left: "0",
-              right: "0",
-              margin: "auto",
             }}
           />
           <span>Account</span>

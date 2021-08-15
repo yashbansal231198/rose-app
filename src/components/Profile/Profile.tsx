@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Profile.css";
-import Info from "../../components/Info/Info";
+import ProfileInfo from "../ProfileInfo/ProfileInfo";
 import Stats from "../../components/Stats/Stats";
 import TopAccountsWidget from "../../components/TopAccountsWidget/TopAccountsWidget";
 import TopRankingProfiles from "../../components/TopRankingProfiles/TopRankingProfiles";
 const Profile = () => {
   return (
     <div className="leaderboard">
-      <Info />
+      <ProfileInfo />
       <div className="leaderboard_right">
         <Stats />
         <TopAccountsWidget />

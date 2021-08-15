@@ -34,7 +34,6 @@ import profile5 from "../../assets/profile5.png";
 import Divider from "@material-ui/core/Divider";
 import LoyaltyIcon from "@material-ui/icons/Loyalty";
 import { profile } from "console";
-import Info from "../Info/Info";
 import useSearchPosts from "../../hooks/useSearchPosts";
 import Row from "../Row/Row";
 import TopAccountsWidget from "../TopAccountsWidget/TopAccountsWidget";

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./Recent.css";
+import React, { useState, Suspense } from "react";
+import "./RecentNotifications.css";
 import { List, AutoSizer } from "react-virtualized";
 import SettingsIcon from "@material-ui/icons/Settings";
 import coins from "../../assets/coins.png";
@@ -15,7 +15,10 @@ import Divider from "@material-ui/core/Divider";
 import ArticleProps from "../../types/ArticleProps";
 import useNotifications from "../../hooks/useNotifications";
 import NotificationImages from "./NotificationImages";
-const Recent: React.FC = () => {
+import { lazily } from "react-lazily";
+
+const { NotificationSettings } = lazily(() => import("./NotificationSettings"));
+const RecentNotifications: React.FC = () => {
   const notifications = useNotifications();
   const [notification, setNotification] = useState(true);
   const [open, setOpen] = React.useState(false);
@@ -103,59 +106,11 @@ const Recent: React.FC = () => {
           </div>
         )}
       </div>
-      <Dialog
-        open={open}
-        scroll="body"
-        keepMounted
-        onClose={handleClose}
-        aria-labelledby="alert-dialog-slide-title"
-        aria-describedby="alert-dialog-slide-description"
-      >
-        <DialogTitle id="alert-dialog-slide-title">
-          <div className="title">
-            <CloseIcon onClick={handleClose} style={{ cursor: "pointer" }} />
-            <h4>Preferences</h4>
-            <div></div>
-          </div>
-        </DialogTitle>
-        <Divider />
-
-        <DialogActions>
-          <div className="form_element">
-            <h3>Awards</h3>
-            <h5>Get notified when you unlock Awards</h5>
-            <input type="checkbox" className="checkbox" />
-          </div>
-        </DialogActions>
-        <Divider />
-        <DialogActions>
-          <div className="form_element">
-            <h3>New Posts Available</h3>
-            <h5>Get notified when new posts are available for sharing</h5>
-            <input type="checkbox" className="checkbox" />
-          </div>
-        </DialogActions>
-        <Divider />
-        <DialogActions>
-          <div className="form_element">
-            <h3>Points</h3>
-            <h5>Get notified when you gain points</h5>
-            <input type="checkbox" className="checkbox" />
-          </div>
-        </DialogActions>
-        <Divider />
-        <DialogActions>
-          <div className="form_element">
-            <h3>Comment Mentions</h3>
-            <h5>Get notified when someone mentions you in a comment</h5>
-            <input type="checkbox" className="checkbox" />
-            <Divider />
-          </div>
-        </DialogActions>
-        <Divider />
-      </Dialog>
+      <Suspense fallback={<div className="loading">Loading...</div>}>
+        <NotificationSettings close={handleClose} valueOpen={open} />
+      </Suspense>
     </div>
   );
 };
 
-export default Recent;
+export default RecentNotifications;

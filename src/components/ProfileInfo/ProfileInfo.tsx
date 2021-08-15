@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Info.css";
+import "./ProfileInfo.css";
 import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import TextField from "@material-ui/core/TextField";
@@ -11,7 +11,7 @@ import Slide from "@material-ui/core/Slide";
 import CloseIcon from "@material-ui/icons/Close";
 import Divider from "@material-ui/core/Divider";
 import default_profile from "../../assets/default_profile.png";
-import Stored from "../../components/Stored/Stored";
+import Stored from "../Stored/Stored";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
@@ -21,7 +21,7 @@ import LocationData from "./LocationData";
 import DepartmentData from "./DepartmentData";
 const locations = LocationData;
 const departments = DepartmentData;
-function Info() {
+function ProfileInfo() {
   const [open, setOpen] = React.useState(false);
   const [profile, setProfile] = React.useState({
     firstName: "Yash",
@@ -163,4 +163,4 @@ function Info() {
   );
 }
 
-export default Info;
+export default ProfileInfo;

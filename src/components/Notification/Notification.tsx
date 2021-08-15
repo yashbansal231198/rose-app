@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Notification.css";
-import Recent from "../../components/Recent/Recent";
 import Stats from "../../components/Stats/Stats";
 import TopAccountsWidget from "../TopAccountsWidget/TopAccountsWidget";
 import TopRankingProfiles from "../TopRankingProfiles/TopRankingProfiles";
+import RecentNotifications from "../RecentNotifications/RecentNotifications";
 export const Notification: React.FC = () => {
   return (
     <div className="leaderboard">
-      <Recent />
+      <RecentNotifications />
       <div className="leaderboard_right">
         <Stats />
         <TopAccountsWidget />
